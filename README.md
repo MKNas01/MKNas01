@@ -68,12 +68,22 @@ I am an **AI Engineer and Front-End Developer** with a **First Class Honors** de
 ### 📊 GitHub Stats
 
 <div align="center">
+
+  <a href="https://github.com/mknas01">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=mknas01&hide_border=true&background=0D1117&ring=A0D8FF&fire=A0D8FF&currStreakLabel=A0D8FF&stroke=A0D8FF&dates=FFFFFF" alt="GitHub Streak" />
+  </a>
+  
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mknas01&theme=react&hide_border=true" alt="streak stats"/>
   <br/>
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api?username=mknas01&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117&title_color=A0D8FF&icon_color=A0D8FF" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mknas01&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=A0D8FF&icon_color=A0D8FF" alt="languages" />
+
+  <a href="https://github.com/mknas01">
+    <img src="https://github-readme-stats.vercel.app/api?username=mknas01&show_icons=true&locale=en&hide_border=true&bg_color=0D1117&title_color=A0D8FF&icon_color=A0D8FF&text_color=FFFFFF" alt="GitHub Stats" />
+  </a>
+
+  <a href="https://github.com/mknas01">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mknas01&show_icons=true&locale=en&layout=compact&hide_border=true&bg_color=0D1117&title_color=A0D8FF&icon_color=A0D8FF&text_color=FFFFFF" alt="Top Languages" />
+  </a>
+
 </div>
 
 <br/>
