@@ -21,9 +21,8 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Africa/Lagos
-          debug: yes  # <--- Shows exact error details if something breaks
           
-          # Colors (Fixed: using extras_css instead of config_style)
+          # Colors (Cyan Theme - Corrected)
           extras_css: |
             body { background-color: #0D1117 !important; }
             h1, h2, h3, h4, h5, h6 { color: #A0D8FF !important; }
@@ -38,14 +37,9 @@ jobs:
           # 2. Lines of Code
           plugin_lines: yes
           
-          # 3. Habits (Fixed: Looking back 30 days to find enough data)
-          plugin_habits: yes
-          plugin_habits_days: 30      # <--- Increased from 14 to 30
-          plugin_habits_facts: no
-          plugin_habits_charts: yes
-          plugin_habits_trim: yes
-          plugin_habits_from: 1000    # <--- Fetch more history to ensure graph data
+          # 3. Habits (REMOVED: This was causing the "Unexpected Error")
+          plugin_habits: no
           
-          # 4. Isometric Calendar
+          # 4. Isometric Calendar (3D Blocks)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
