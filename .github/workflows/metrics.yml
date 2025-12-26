@@ -21,30 +21,31 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Africa/Lagos
+          debug: yes  # <--- Shows exact error details if something breaks
           
-          # Colors (Cyan Theme)
-          config_style: |
+          # Colors (Fixed: using extras_css instead of config_style)
+          extras_css: |
             body { background-color: #0D1117 !important; }
             h1, h2, h3, h4, h5, h6 { color: #A0D8FF !important; }
             .field svg { fill: #A0D8FF !important; }
             
-          # 1. Languages (Code usage)
+          # 1. Languages
           plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css
+          plugin_languages_ignored: html, css
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
           
           # 2. Lines of Code
           plugin_lines: yes
           
-          # 3. Habits (FIXED: Charts ON, Facts OFF)
+          # 3. Habits (Fixed: Looking back 30 days to find enough data)
           plugin_habits: yes
-          plugin_habits_days: 14
-          plugin_habits_facts: no     # Disabled to prevent errors
-          plugin_habits_charts: yes   # Enabled for visual graphs
-          plugin_habits_from: 200     # Limit to recent 200 events for speed
+          plugin_habits_days: 30      # <--- Increased from 14 to 30
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
+          plugin_habits_from: 1000    # <--- Fetch more history to ensure graph data
           
-          # 4. Isometric Calendar (3D Blocks)
+          # 4. Isometric Calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
