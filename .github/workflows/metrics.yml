@@ -38,12 +38,8 @@ jobs:
           # 2. Lines of Code
           plugin_lines: yes
           
-          # 3. Habits (FIXED: Charts ON, Facts OFF)
-          plugin_habits: yes
-          plugin_habits_days: 14
-          plugin_habits_facts: no     # Disabled to prevent errors
-          plugin_habits_charts: yes   # Enabled for visual graphs
-          plugin_habits_from: 200     # Limit to recent 200 events for speed
+          # 3. Habits (REMOVED due to error)
+          plugin_habits: no
           
           # 4. Isometric Calendar (3D Blocks)
           plugin_isocalendar: yes
