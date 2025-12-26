@@ -2,7 +2,7 @@ name: Metrics
 on:
   # Schedule updates (once a day)
   schedule: [{cron: "0 0 * * *"}]
-  # Lines below let you run it manually and on each commit
+  # Run manually or on push
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 
@@ -14,7 +14,6 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
@@ -23,25 +22,29 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Africa/Lagos
           
-          # Colors (Matches your Portfolio Cyan #A0D8FF and Dark #0D1117)
+          # Colors (Cyan Theme)
           config_style: |
             body { background-color: #0D1117 !important; }
             h1, h2, h3, h4, h5, h6 { color: #A0D8FF !important; }
             .field svg { fill: #A0D8FF !important; }
             
-          # Modules
+          # 1. Languages (Code usage)
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
           
+          # 2. Lines of Code
           plugin_lines: yes
           
+          # 3. Habits (FIXED: Charts ON, Facts OFF)
           plugin_habits: yes
           plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_from: 200
+          plugin_habits_facts: no     # Disabled to prevent errors
+          plugin_habits_charts: yes   # Enabled for visual graphs
+          plugin_habits_from: 200     # Limit to recent 200 events for speed
           
+          # 4. Isometric Calendar (3D Blocks)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
