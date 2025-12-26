@@ -31,7 +31,7 @@
 
 ### 🚀 About Me
 
-I am an **AI Engineer and Front-End Developer** with a **First Class Honors** degree in Computer Engineering (4.69/5.0 CGPA). I specialize in bridging the gap between complex Artificial Intelligence models and immersive, interactive Front-End experiences.
+I am an **AI Engineer and Front-End Developer** with a **First Class Honors** degree in Computer Engineering. I specialize in bridging the gap between complex Artificial Intelligence models and immersive, interactive Front-End experiences.
 
 * 🔭 I’m currently working on **AI-driven Accessibility Tools (PathPilot)**.
 * 🎨 I specialize in **Three.js, React, and Next.js** for 3D web experiences.
